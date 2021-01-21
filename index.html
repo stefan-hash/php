@@ -16,15 +16,22 @@ and open the template in the editor.
     </head>
     <body>
         <button id="select1">SELECT</button>
+
+
+
+        <script>
+
+            document.getElementById("select1").addEventListener("click", cargarPagina);
+
+            function cargarPagina() {
+                var id = document.getElementById("usuario_id").value;
+                window.location = "http://localhost/IniciosPHP/index.php?id=" + id;
+            }
+
+        </script>       
+
+
     </body>
 </html>
 
-<script>
 
-document.getElementById("select1").addEventListener("click", );
-
-function cargarPagina(){
-    
-}
-
-</script>
